@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33712.159
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Vet.Shared", "Vet.Shared\Vet.Shared.csproj", "{4B3194E1-B4E6-49AC-9AD2-E30F649DE0A0}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Vet.API", "Vet.API\Vet.API.csproj", "{574E17B0-FDAF-46A3-9686-14B12F421C8F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Vet.WEB", "Vet.WEB\Vet.WEB.csproj", "{E93D9B6E-65D0-41DA-87A3-53F65F5F0E0B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4B3194E1-B4E6-49AC-9AD2-E30F649DE0A0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4B3194E1-B4E6-49AC-9AD2-E30F649DE0A0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4B3194E1-B4E6-49AC-9AD2-E30F649DE0A0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4B3194E1-B4E6-49AC-9AD2-E30F649DE0A0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{574E17B0-FDAF-46A3-9686-14B12F421C8F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{574E17B0-FDAF-46A3-9686-14B12F421C8F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{574E17B0-FDAF-46A3-9686-14B12F421C8F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{574E17B0-FDAF-46A3-9686-14B12F421C8F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E93D9B6E-65D0-41DA-87A3-53F65F5F0E0B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E93D9B6E-65D0-41DA-87A3-53F65F5F0E0B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E93D9B6E-65D0-41DA-87A3-53F65F5F0E0B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E93D9B6E-65D0-41DA-87A3-53F65F5F0E0B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {05C89ABD-4F7A-4EF3-B9AB-C8E24C73930E}
+	EndGlobalSection
+EndGlobal

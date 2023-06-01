@@ -1,0 +1,78 @@
+﻿@page "/mascotas"
+@inject IRepository repository
+<h3>Mascotas</h3>
+
+<GenericList MyList="Mascotas">
+    <Body>
+ <table class="table table-striped">
+        <thead>
+            <tr>
+                <th></th>
+                <th>Mascotas</th>
+              @*  <th>Peso</th>
+                <th>Sexo</th>
+                <th>Raza</th>
+                <th>Color</th>
+                <th>Especie</th>
+                <th>Fecha de nacimiento</th>
+                <th>Tratamiento</th>
+                <th>Antecedentes</th>*@
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var mascota in Mascotas!)
+            {
+                <tr>
+                    <td>
+                        <a class="btn btn-warning">Editar</a>
+                        <button class="btn btn-danger">Borrar</button>
+                    </td>
+                    <td>
+                        @mascota.Name
+                    </td>
+                @*    <td>
+                        @mascota.Peso
+                    </td>
+                    <td>
+                        @mascota.Sexo
+                    </td>
+                    <td>
+                        @mascota.Raza
+                    </td>
+                    <td>
+                        @mascota.Color
+                    </td>
+                    <td>
+                        @mascota.Especie
+                    </td>
+                    <td>
+                        @mascota.FechaNacimiento
+                    </td>
+                        <td>
+                            @mascota.Tratamiento
+                        </td>
+                    <td>
+                        @mascota.TAntecedentes
+                    </td>*@
+                </tr>
+            }
+        </tbody>
+    </table>
+
+    </Body>
+</GenericList>
+
+
+   
+
+
+
+@code {
+    public List<Mascota>? Mascotas{ get; set; }
+
+    protected override async Task OnInitializedAsync()
+    {
+        var ResponseHttp = await repository.Get<List<Mascota>>("/api/mascotas");
+        Mascotas = ResponseHttp.Response;
+    }
+}
